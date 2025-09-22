@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prompong • Portfolio</title>
+  <meta name="description" content="Portfolio ของ Prompong Bunjerdwattanakul — นักศึกษาสาย Backend/AI" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="nav">
+    <div class="container nav-inner" style="justify-content:center;">
+      <strong>Prompong • Portfolio</strong>
+    </div>
+  </nav>
+
+  <main class="container">
+    <!-- Hero / Home -->
+    <section id="home" class="card hero">
+      <img src="assets/profile.png" alt="Profile photo" class="avatar" onerror="this.style.display='none'">
+      <div>
+        <h1 class="title">Prompong Bunjerdwattanakul</h1>
+        <p class="role">Student Developer · Backend / AI</p>
+        <p class="tagline">“พร้อมเรียนรู้ พร้อมเติบโต และพร้อมลุยไปกับทุกโอกาสที่เข้ามา”</p>
+        <div class="badges">
+          <span class="badge">Bangkok University</span>
+          <span class="badge">GPA 3.46</span>
+          <span class="badge">Bangkok, TH</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="card">
+      <h2>About Me</h2>
+      <div class="two-col">
+        <div>
+          <p>ผมชื่อ <strong>พร้อมพงษ์ บรรเจิดวัฒนกุล</strong> (ธันวา)
+          </p>
+            นักศึกษาที่หลงใหลใน Backend และ AI พร้อมเรียนรู้อย่างต่อเนื่อง<br>
+            ชอบสร้างระบบที่ ใช้งานง่าย และ ทำงานได้ดี<br>
+            ใส่ใจทั้งประสบการณ์ผู้ใช้และโครงสร้างหลังบ้านให้<br>
+            เสถียร และ รองรับการเติบโตได้อย่างมีประสิทธิภาพ
+        </div>
+        <div>
+          <ul class="about-list">
+            <li><strong>การศึกษา</strong>: Bangkok University — คณะเทคโนโลยีสารสนเทศ</li>
+            <li><strong>ความสนใจ</strong>: Backend, AI/ML</li>
+            <li><strong>สถานะ</strong>: <span class="soft-green">เปิดรับโอกาสฝึกงาน</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <div class="projects">
+
+        <article class="project">
+          <h3>Usaual — Shop Application</h3>
+          <p class="meta">Usual คือแอปเดสก์ท็อปสำหรับร้านค้าขนาดเล็กที่รวมการจัดการสินค้า 
+          ตะกร้า และการชำระเงินไว้ในที่เดียว คำนวณส่วนลดและภาษีอัตโนมัติ พร้อมอัปเดตสต็อกทันทีหลังสั่งซื้อ
+          ฝั่งแอดมินสามารถเพิ่ม-แก้ไข-ลบสินค้าและตรวจสอบคำสั่งซื้อย้อนหลังได้สะดวก</p>
+          <div class="tags"><span>Python</span><span>Tkinter</span><span>SQLite</span></div>
+          <ul class="bullets">
+            <li>จัดการสินค้า–ตะกร้า–ชำระเงิน พร้อมคำนวณส่วนลด/VAT และอัปเดตสต็อกอัตโนมัติ</li>
+            <li>แอดมินเพิ่ม/แก้ไข/ลบสินค้า และดูคำสั่งซื้อย้อนหลังได้</li>
+          </ul>
+          <p class="links"><a href="https://github.com/l3elieveiT/Usual" target="_blank" rel="noopener">Code/Repo</a></p>
+        </article>
+
+        <article class="project">
+          <h3>DriveNow - Mini-Ecommerce Website</h3>
+          <p class="meta">Drive Now เป็น Website ที่มีระบบบันทึกและติดตามคำสั่งงานที่ออกแบบให้ใช้งานง่าย
+          ผู้ใช้สามารถสร้างงาน กำหนดสถานะเป็นขั้นตอน และค้นหาหรือกรองรายการได้อย่างรวดเร็ว 
+          โครงสร้างถูกวางให้รองรับการขยายฟีเจอร์ในอนาคตโดยไม่กระทบการใช้งานเดิม</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <ul class="bullets">
+            <li>บันทึกคำสั่งงาน/สถานะงานแบบเป็นขั้นตอน ค้นหา–กรองรายการได้ง่าย</li>
+            <li>หน้าจอเรียบ ใช้งานสะดวก รองรับการขยายฟีเจอร์ในอนาคต</li>
+          </ul>
+          <p class="links"><a href="https://github.com/l3elieveiT/DriveNow" target="_blank" rel="noopener">Code/Repo</a></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section id="skills" class="card">
+      <h2>Technical Skills</h2>
+      <div class="two-col">
+        <div>
+          <h3 class="subhead">Languages</h3>
+          <div class="skill">
+            <div class="head"><strong>Python</strong><span>80%</span></div>
+            <div class="bar"><span style="width:80%"></span></div>
+            <div class="head"><strong>JavaScript</strong><span>40%</span></div>
+            <div class="bar"><span style="width:40%"></span></div>
+            <div class="head"><strong>CSS</strong><span>30%</span></div>
+            <div class="bar"><span style="width:30%"></span></div>
+            <div class="head"><strong>HTML</strong><span>30%</span></div>
+            <div class="bar"><span style="width:30%"></span></div>
+          </div>
+        </div>
+        <div> 
+          <h3 class="subhead">Databases</h3>
+          <div class="skill">
+            <div class="head"><strong>SQLite</strong><span>80%</span></div>
+            <div class="bar"><span style="width:80%"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certs" class="card">
+      <h2>Certifications</h2>
+      <ul class="bullets">
+        <li>
+          <strong>Coursera</strong> — Customer Service with Python: Build a Chatbot using ChatGPT
+          <a href="assets/Corsera.jpg" target="_blank" rel="noopener">[ดูใบรับรอง]</a>
+        </li>
+        <li>
+          <strong>MOOC</strong> — Basic Cybersecurity
+          <a href="assets/MOOC.jpg" target="_blank" rel="noopener">[ดูใบรับรอง]</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Work Experience -->
+    <section id="work" class="card">
+      <h2>Work Experience</h2>
+      <article class="job">
+        <header class="job-header">
+          <h3>Student Developer <span class="at">@ Bangkok University</span></h3>
+        </header>
+        <ul class="cli-list">
+          <li><span class="prompt">-</span> โฟกัสสาย <strong>Backend</strong> และ <strong>AI</strong> พัฒนางานจากโปรเจกต์จริงและงานทีม</li>
+          <li><span class="prompt">-</span> สร้างเครื่องมือ/ระบบย่อยเพื่อเพิ่มประสิทธิภาพการทำงาน (ดูรายละเอียดใน Projects)</li>
+          <li><span class="prompt">-</span> มุ่งหาประสบการณ์ <strong>Internship</strong> สาย Backend Developer / AI</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li>อีเมล: <a href="mailto:mantunwa@gmail.com">mantunwa@gmail.com</a></li>
+        <li>โทร: <a href="tel:+66970243148">(+66) 097-024-3148</a></li>
+      </ul>
+      <div class="btns">
+        <a class="btn" href="https://github.com/l3elieveiT" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/prompong-bunjerdwattanakul/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © <span id="year"></span> Prompong Bunjerdwattanakul
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
