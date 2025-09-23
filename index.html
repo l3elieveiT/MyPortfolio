@@ -60,6 +60,9 @@
 
         <article class="project">
           <h3>Usaual — Shop Application</h3>
+          <div class="thumb">
+            <img src="assets/Usual.png">
+          </div>
           <p class="meta">Usual คือแอปเดสก์ท็อปสำหรับร้านค้าขนาดเล็กที่รวมการจัดการสินค้า 
           ตะกร้า และการชำระเงินไว้ในที่เดียว คำนวณส่วนลดและภาษีอัตโนมัติ พร้อมอัปเดตสต็อกทันทีหลังสั่งซื้อ
           ฝั่งแอดมินสามารถเพิ่ม-แก้ไข-ลบสินค้าและตรวจสอบคำสั่งซื้อย้อนหลังได้สะดวก</p>
@@ -70,14 +73,17 @@
           </ul>
           <p class="links">
             <a href="https://github.com/l3elieveiT/Usual/tree/main/Usual" target="_blank" rel="noopener">Code/Repo</a>
-            <a class="btn" href="https://www.figma.com/design/5iNovnCtWiPdhjpDGbyReD/Untitled?node-id=0-1&t=n5ECl2KLCa3ZitdG-1" target="_blank" rel="noopener">Demo</a>
+            <a class="btn" href="https://www.figma.com/design/5iNovnCtWiPdhjpDGbyReD/Untitled?node-id=0-1&t=n5ECl2KLCa3ZitdG-1" target="_blank" rel="noopener">Figma</a>
           </p>
         </article>
 
         <article class="project">
           <h3>DriveNow - Mini-Ecommerce Website</h3>
+          <div class="thumb">
+            <img src="assets/DriveNow.png">
+          </div>
           <p class="meta">Drive Now เป็น Website ที่มีระบบบันทึกและติดตามคำสั่งงานที่ออกแบบให้ใช้งานง่าย
-          ผู้ใช้สามารถสร้างงาน กำหนดสถานะเป็นขั้นตอน และค้นหาหรือกรองรายการได้อย่างรวดเร็ว 
+          ผู้ใช้สามารถสร้างงาน กำหนดสถานะเป็นขั้นตอน และค้นหาหรือกรองรายการได้อย่างรวดเร็ว
           โครงสร้างถูกวางให้รองรับการขยายฟีเจอร์ในอนาคตโดยไม่กระทบการใช้งานเดิม</p>
           <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
           <ul class="bullets">
@@ -119,19 +125,39 @@
       </div>
     </section>
 
+        <!-- Soft Skills -->
+    <section id="softskill" class="card">
+      <h2>Soft Skills</h2>
+      <article class="job">
+        <ul class="cli-list">
+          <li><span class="prompt">-</span> มีความรับผิดชอบและตรงต่อเวลา </li>
+          <li><span class="prompt">-</span> สามารถแก้ไขปัญหาเฉพาะหน้าได้ </li>
+          <li><span class="prompt">-</span> เป็นคนที่เรียนรู้ได้ไว </li>
+        </ul>
+      </article>
+    </section>
+
     <!-- Certifications -->
     <section id="certs" class="card">
       <h2>Certifications</h2>
-      <ul class="bullets">
-        <li>
-          <strong>Coursera</strong> — Customer Service with Python: Build a Chatbot using ChatGPT
-          <a href="assets/Corsera.jpg" target="_blank" rel="noopener">[ดูใบรับรอง]</a>
-        </li>
-        <li>
-          <strong>MOOC</strong> — Basic Cybersecurity
-          <a href="assets/MOOC.jpg" target="_blank" rel="noopener">[ดูใบรับรอง]</a>
-        </li>
-      </ul>
+      <div class="projects">
+
+        <article class="project">
+          <h3>Coursera</h3>
+          <div class="thumb">
+            <img src="assets/Corsera.jpg">
+          </div>
+          </h3>Customer Service with Python: Build a Chatbot using ChatGPT</h3>
+        </article>
+
+        <article class="project">
+          <h3>Coursera</h3>
+          <div class="thumb">
+            <img src="assets/MOOC.jpg">
+          </div>
+          <h3>Basic Cybersecurity</h3>
+        </article>
+
     </section>
 
     <!-- Work Experience -->
@@ -153,13 +179,11 @@
     <section id="contact" class="card">
       <h2>Contact</h2>
       <ul class="contact-list">
-        <li>อีเมล: <a href="mailto:mantunwa@gmail.com">mantunwa@gmail.com</a></li>
-        <li>โทร: <a href="tel:+66970243148">(+66) 097-024-3148</a></li>
+        <li>อีเมล : <a href="mailto:mantunwa@gmail.com">mantunwa@gmail.com</a></li>
+        <li>โทร : <a href="tel:+66970243148">(+66) 097-024-3148</a></li>
+        <li><a href="https://github.com/l3elieveiT">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/prompong-bunjerdwattanakul/">LinkedIn</a></li>
       </ul>
-      <div class="btns">
-        <a class="btn" href="https://github.com/l3elieveiT" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn" href="https://www.linkedin.com/in/prompong-bunjerdwattanakul/" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
     </section>
   </main>
 
@@ -167,6 +191,10 @@
     © <span id="year"></span> Prompong Bunjerdwattanakul
   </footer>
 
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">×</button>
+    <img id="lightboxImg" alt="preview">
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
