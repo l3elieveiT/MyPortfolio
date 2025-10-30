@@ -3,198 +3,288 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Prompong • Portfolio</title>
-  <meta name="description" content="Portfolio ของ Prompong Bunjerdwattanakul — นักศึกษาสาย Backend/AI" />
+  <title>Prompong • 8-bit Programmer Portfolio</title>
+  <meta name="description" content="Portfolio ของ Prompong Bunjerdwattanakul — นักศึกษา Backend/AI ในธีม 8-bit Programmer" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Sarabun:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Swiper & Site CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <!-- Navbar -->
+<body class="parallax-grid">
+  <div class="scanline"></div>
+
   <nav class="nav">
-    <div class="container nav-inner" style="justify-content:center;">
-      <strong>Prompong • Portfolio</strong>
+    <div class="container nav__inner">
+      <strong class="nav-brand">&lt;Prompong/&gt;</strong>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link sparkle press active">HOME</a></li>
+        <li><a href="#about" class="nav-link sparkle press">ABOUT</a></li>
+        <li><a href="#projects" class="nav-link sparkle press">PROJECTS</a></li>
+        <li><a href="#skills" class="nav-link sparkle press">SKILLS</a></li>
+        <li><a href="#cert" class="nav-link sparkle press">CERT</a></li>
+        <li><a href="#work" class="nav-link sparkle press">WORK</a></li>
+        <li><a href="#contact" class="nav-link sparkle press">CONTACT</a></li>
+      </ul>
     </div>
   </nav>
 
-  <main class="container">
-    <!-- Hero / Home -->
-    <section id="home" class="card hero">
-      <img src="assets/profile.png" alt="Profile photo" class="avatar" onerror="this.style.display='none'">
-      <div>
-        <h1 class="title">Prompong Bunjerdwattanakul</h1>
-        <p class="role">Student Developer · Backend / AI</p>
-        <p class="tagline">“พร้อมเรียนรู้ พร้อมเติบโต และพร้อมลุยไปกับทุกโอกาสที่เข้ามา”</p>
-        <div class="badges">
-          <span class="badge">Bangkok University</span>
-          <span class="badge">GPA 3.46</span>
-          <span class="badge">Bangkok, TH</span>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+
+      <!-- HOME -->
+      <div class="swiper-slide" data-hash="home">
+        <div class="slide-content center">
+          <section class="hero card pixel neon-pulse shimmer scanline-overlay reveal floaty">
+            <img src="assets/profile.png" alt="Profile" class="avatar" onerror="this.style.display='none'">
+            <div class="hero-copy">
+              <h1 class="title glitch" data-text="PROMPONG BUNJERDWATTANAKUL">PROMPONG BUNJERDWATTANAKUL</h1>
+              <p class="role">Backend / AI • Student Developer</p>
+              <p class="tagline">&gt; ready_to_learn(); ready_to_grow();</p>
+              <ul class="badges">
+                <li class="badge">Bangkok University</li>
+                <li class="badge">GPA 3.46</li>
+                <li class="badge">Bangkok, TH</li>
+              </ul>
+              <div class="cta">
+                <a class="btn sparkle press" href="#projects">VIEW PROJECTS</a>
+                <a class="btn alt sparkle press" href="#contact">CONTACT</a>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
-    </section>
 
-    <!-- About -->
-    <section id="about" class="card">
-      <h2>About Me</h2>
-      <div class="two-col">
-        <div>
-          <p>ผมชื่อ <strong>พร้อมพงษ์ บรรเจิดวัฒนกุล</strong> (ธันวา)
-          </p>
-            นักศึกษาที่หลงใหลใน Backend และ AI พร้อมเรียนรู้อย่างต่อเนื่อง<br>
-            ชอบสร้างระบบที่ ใช้งานง่าย และ ทำงานได้ดี<br>
-            ใส่ใจทั้งประสบการณ์ผู้ใช้และโครงสร้างหลังบ้านให้<br>
-            เสถียร และ รองรับการเติบโตได้อย่างมีประสิทธิภาพ
-        </div>
-        <div>
-          <ul class="about-list">
-            <li><strong>การศึกษา</strong>: Bangkok University — คณะเทคโนโลยีสารสนเทศ</li>
-            <li><strong>ความสนใจ</strong>: Backend, AI/ML</li>
-            <li><strong>สถานะ</strong>: <span class="soft-green">เปิดรับโอกาสฝึกงาน</span></li>
-          </ul>
-        </div>
-      </div>
-    </section>
+      <!-- ABOUT (story) -->
+      <div class="swiper-slide" data-hash="about">
+        <div class="slide-content">
 
-    <!-- Projects -->
-    <section id="projects" class="card">
-      <h2>Projects</h2>
-      <div class="projects">
+          <!-- ABOUT ME BLOCK -->
+          <section class="section card pixel tight about-full neon-pulse shimmer scanline-overlay reveal">
+            <header class="section-head">
+              <h2 class="heading neon-flicker">ABOUT ME</h2>
+              <p class="section-sub">who_i_am();</p>
+            </header>
 
-        <article class="project">
-          <h3>Usaual — Shop Application</h3>
-          <div class="thumb">
-            <img src="assets/Usual.png">
-          </div>
-          <p class="meta">Usual คือแอปเดสก์ท็อปสำหรับร้านค้าขนาดเล็กที่รวมการจัดการสินค้า 
-          ตะกร้า และการชำระเงินไว้ในที่เดียว คำนวณส่วนลดและภาษีอัตโนมัติ พร้อมอัปเดตสต็อกทันทีหลังสั่งซื้อ
-          ฝั่งแอดมินสามารถเพิ่ม-แก้ไข-ลบสินค้าและตรวจสอบคำสั่งซื้อย้อนหลังได้สะดวก</p>
-          <div class="tags"><span>Python</span><span>Tkinter</span><span>SQLite</span></div>
-          <ul class="bullets">
-            <li>จัดการสินค้า–ตะกร้า–ชำระเงิน พร้อมคำนวณส่วนลด/VAT และอัปเดตสต็อกอัตโนมัติ</li>
-            <li>แอดมินเพิ่ม/แก้ไข/ลบสินค้า และดูคำสั่งซื้อย้อนหลังได้</li>
-          </ul>
-          <p class="links">
-            <a href="https://github.com/l3elieveiT/Usual/tree/main/Usual" target="_blank" rel="noopener">Code/Repo</a>
-            <a class="btn" href="https://www.figma.com/design/5iNovnCtWiPdhjpDGbyReD/Untitled?node-id=0-1&t=n5ECl2KLCa3ZitdG-1" target="_blank" rel="noopener">Figma</a>
-          </p>
-        </article>
+            <p class="about-desc">
+              ตั้งแต่ตอนเด็ก ๆ ผมเป็นคนที่ชอบเล่นเกมมาก จนวันหนึ่งเริ่มสงสัยว่าทำไมทุกอย่างบนจอถึงขยับได้
+              ทำไมตัวละครถึงตอบสนอง หรือระบบมันคิดเองได้ยังไง ความสงสัยนั้นกลายเป็นแรงผลักดันให้ผมอยากเข้าใจ
+              <strong>สิ่งที่อยู่เบื้องหลังการทำงานของเทคโนโลยี</strong>
+              จนทำให้ผมเริ่มสนใจการเขียนโปรแกรม และค่อย ๆ รู้ว่ามันไม่ใช่แค่คำสั่งบนหน้าจอ
+              แต่มันคือ “เครื่องมือที่เปลี่ยนไอเดียให้กลายเป็นสิ่งจริงได้”
+            </p>
 
-        <article class="project">
-          <h3>DriveNow - Mini-Ecommerce Website</h3>
-          <div class="thumb">
-            <img src="assets/DriveNow.png">
-          </div>
-          <p class="meta">Drive Now เป็น Website ที่มีระบบบันทึกและติดตามคำสั่งงานที่ออกแบบให้ใช้งานง่าย
-          ผู้ใช้สามารถสร้างงาน กำหนดสถานะเป็นขั้นตอน และค้นหาหรือกรองรายการได้อย่างรวดเร็ว
-          โครงสร้างถูกวางให้รองรับการขยายฟีเจอร์ในอนาคตโดยไม่กระทบการใช้งานเดิม</p>
-          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-          <ul class="bullets">
-            <li>บันทึกคำสั่งงาน/สถานะงานแบบเป็นขั้นตอน ค้นหา–กรองรายการได้ง่าย</li>
-            <li>หน้าจอเรียบ ใช้งานสะดวก รองรับการขยายฟีเจอร์ในอนาคต</li>
-          </ul>
-          <p class="links">
-            <a href="https://github.com/l3elieveiT/DriveNow" target="_blank" rel="noopener">Code/Repo</a>
-            <a class="btn" href="https://l3elieveit.github.io/DriveNow/" target="_blank" rel="noopener">Demo</a>
-          </p>
-        </article>
-      </div>
-    </section>
+            <p class="about-desc">
+              ตอนนี้ผมกำลังศึกษาอยู่ที่ <strong>Bangkok University — School of Information Technology</strong>
+              โฟกัสสาย <strong>Backend</strong> และ <strong>AI/ML</strong> เพราะชอบการสร้างระบบที่มั่นคง
+              มีโครงสร้างชัดเจน และทำงานได้ดีในระยะยาว
+            </p>
+          </section>
 
-    <!-- Technical Skills -->
-    <section id="skills" class="card">
-      <h2>Technical Skills</h2>
-      <div class="two-col">
-        <div>
-          <h3 class="subhead">Languages</h3>
-          <div class="skill">
-            <div class="head"><strong>Python</strong><span>80%</span></div>
-            <div class="bar"><span style="width:80%"></span></div>
-            <div class="head"><strong>JavaScript</strong><span>40%</span></div>
-            <div class="bar"><span style="width:40%"></span></div>
-            <div class="head"><strong>CSS</strong><span>30%</span></div>
-            <div class="bar"><span style="width:30%"></span></div>
-            <div class="head"><strong>HTML</strong><span>30%</span></div>
-            <div class="bar"><span style="width:30%"></span></div>
-          </div>
-        </div>
-        <div> 
-          <h3 class="subhead">Databases</h3>
-          <div class="skill">
-            <div class="head"><strong>SQLite</strong><span>60%</span></div>
-            <div class="bar"><span style="width:60%"></span></div>
-          </div>
+          <!-- INTEREST BLOCK -->
+          <section class="section card pixel tight interest-full neon-pulse shimmer scanline-overlay reveal">
+            <header class="section-head">
+              <h2 class="heading neon-flicker">INTEREST</h2>
+              <p class="section-sub">interest();</p>
+            </header>
+
+            <ul class="interest-list">
+              <li>Backend Development / API Design</li>
+              <li>AI / Machine Learning</li>
+              <li>Clean Architecture, REST/JSON, Docker (พื้นฐาน)</li>
+              <li>Target → Internship in Backend/AI to gain real-world experience</li>
+            </ul>
+          </section>
+
         </div>
       </div>
-    </section>
 
-        <!-- Soft Skills -->
-    <section id="softskill" class="card">
-      <h2>Soft Skills</h2>
-      <article class="job">
-        <ul class="cli-list">
-          <li><span class="prompt">-</span> มีความรับผิดชอบและตรงต่อเวลา </li>
-          <li><span class="prompt">-</span> สามารถแก้ไขปัญหาเฉพาะหน้าได้ </li>
-          <li><span class="prompt">-</span> เป็นคนที่เรียนรู้ได้ไว </li>
-        </ul>
-      </article>
-    </section>
+      <!-- PROJECTS -->
+      <div class="swiper-slide" data-hash="projects">
+        <div class="slide-content scrollable">
+          <section class="section">
+            <header class="section-head">
+              <h2 class="heading neon-flicker">PROJECTS</h2>
+              <p class="section-sub">showcase();</p>
+            </header>
 
-    <!-- Certifications -->
-    <section id="certs" class="card">
-      <h2>Certifications</h2>
-      <div class="projects">
+            <div class="projects grid-3">
+              <article class="project pixel-plate neon-pulse shimmer scanline-overlay reveal">
+                <h3>Usual — Shop Application</h3>
+                <div class="thumb"><img src="assets/Usual.png" alt="Usual"></div>
+                <p class="meta">เดสก์ท็อปแอปสำหรับร้านค้าขนาดเล็ก: สต็อก, ต้นทุน, ภาษี, ใบเสร็จ</p>
+                <div class="tags"><span>Python</span><span>Tkinter</span><span>SQLite</span></div>
+                <p class="links">
+                  <a class="btn tiny sparkle press" target="_blank" rel="noopener" href="https://github.com/l3elieveiT/Usual/tree/main/Usual">REPO</a>
+                  <a class="btn tiny alt sparkle press" target="_blank" rel="noopener" href="https://www.figma.com/design/5iNovnCtWiPdhjpDGbyReD/Untitled?node-id=0-1">FIGMA</a>
+                </p>
+              </article>
 
-        <article class="project">
-          <h3>Coursera</h3>
-          <div class="thumb">
-            <img src="assets/Corsera.jpg">
-          </div>
-          </h3>Customer Service with Python: Build a Chatbot using ChatGPT</h3>
-        </article>
+              <article class="project pixel-plate neon-pulse shimmer scanline-overlay reveal">
+                <h3>DriveNow — Mini-Ecommerce</h3>
+                <div class="thumb"><img src="assets/DriveNow.png" alt="DriveNow"></div>
+                <p class="meta">เว็บไซต์ demo ระบบรายการรถ/ตะกร้าสินค้า และหน้า UI ที่ปรับแต่งเอง</p>
+                <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                <p class="links">
+                  <a class="btn tiny sparkle press" target="_blank" rel="noopener" href="https://github.com/l3elieveiT/DriveNow">REPO</a>
+                  <a class="btn tiny alt sparkle press" target="_blank" rel="noopener" href="https://l3elieveit.github.io/DriveNow/">DEMO</a>
+                </p>
+              </article>
 
-        <article class="project">
-          <h3>Coursera</h3>
-          <div class="thumb">
-            <img src="assets/MOOC.jpg">
-          </div>
-          <h3>Basic Cybersecurity</h3>
-        </article>
+          </section>
+        </div>
+      </div>
 
-    </section>
+      <!-- SKILLS -->
+      <div class="swiper-slide" data-hash="skills">
+        <div class="slide-content">
+          <section class="section">
+            <header class="section-head">
+              <h2 class="heading neon-flicker">TECHNICAL SKILLS</h2>
+              <p class="section-sub">toolbox();</p>
+            </header>
 
-    <!-- Work Experience -->
-    <section id="work" class="card">
-      <h2>Work Experience</h2>
-      <article class="job">
-        <header class="job-header">
-          <h3>Student Developer <span class="at">@ Bangkok University</span></h3>
-        </header>
-        <ul class="cli-list">
-          <li><span class="prompt">-</span> โฟกัสสาย <strong>Backend</strong> และ <strong>AI</strong> พัฒนางานจากโปรเจกต์จริงและงานทีม</li>
-          <li><span class="prompt">-</span> สร้างเครื่องมือ/ระบบย่อยเพื่อเพิ่มประสิทธิภาพการทำงาน (ดูรายละเอียดใน Projects)</li>
-          <li><span class="prompt">-</span> มุ่งหาประสบการณ์ <strong>Internship</strong> สาย Backend Developer / AI</li>
-        </ul>
-      </article>
-    </section>
+            <div class="two-col card pixel tight neon-pulse shimmer scanline-overlay reveal">
+              <div>
+                <h3 class="subhead">Languages</h3>
+                <div class="skill">
+                  <div class="head"><strong>Python</strong><span>80%</span></div>
+                  <div class="bar"><span data-width="80%"></span></div>
+                </div>
+                <div class="skill">
+                  <div class="head"><strong>JavaScript</strong><span>40%</span></div>
+                  <div class="bar"><span data-width="40%"></span></div>
+                </div>
+                <div class="skill">
+                  <div class="head"><strong>CSS</strong><span>30%</span></div>
+                  <div class="bar"><span data-width="30%"></span></div>
+                </div>
+                <div class="skill">
+                  <div class="head"><strong>HTML</strong><span>30%</span></div>
+                  <div class="bar"><span data-width="30%"></span></div>
+                </div>
+              </div>
+              <div>
+                <h3 class="subhead">Databases</h3>
+                <div class="skill">
+                  <div class="head"><strong>SQLite</strong><span>60%</span></div>
+                  <div class="bar"><span data-width="60%"></span></div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
 
-    <!-- Contact -->
-    <section id="contact" class="card">
-      <h2>Contact</h2>
-      <ul class="contact-list">
-        <li>อีเมล : mantunwa@gmail.com</li>
-        <li>เบอร์โทร : 097-024-3148</li>
-        <li><a href="https://github.com/l3elieveiT">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/prompong-bunjerdwattanakul/">LinkedIn</a></li>
-      </ul>
-    </section>
-  </main>
+      <!-- CERTIFICATION -->
+      <div class="swiper-slide" data-hash="cert">
+        <div class="slide-content scrollable">
+          <section class="section">
+            <header class="section-head">
+              <h2 class="heading neon-flicker">CERTIFICATION</h2>
+              <p class="section-sub">proof_of_work();</p>
+            </header>
 
-  <footer class="site-footer">
-    © <span id="year"></span> Prompong Bunjerdwattanakul
-  </footer>
+      <section class="section">
+            <div class="projects grid-2">
+              <article class="project pixel-plate small">
+                <h3>Coursera</h3>
+                <div class="thumb"><img src="assets/Corsera.jpg" alt="Coursera 1"></div>
+                <p class="meta">Customer Service with Python</p>
+              </article>
+              <article class="project pixel-plate small">
+                <h3>MOOC</h3>
+                <div class="thumb"><img src="assets/MOOC.jpg" alt="MOOC"></div>
+                <p class="meta">Basic Cybersecurity</p>
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
 
+      <!-- WORK -->
+      <div class="swiper-slide" data-hash="work">
+        <div class="slide-content scrollable">
+          <section class="section section-like-about work-like-about">
+            <header class="section-head section-head-like-about">
+              <h2 class="heading neon-flicker">WORK EXPERIENCE</h2>
+              <p class="section-sub">what_i_do();</p>
+            </header>
+
+            <div class="card-stack-like-about">
+              <!-- 1) Student Developer / Independent Projects -->
+              <article class="about-card-like work-card card neon-pulse shimmer scanline-overlay reveal">
+                <header class="work-title">
+                  <h3>STUDENT DEVELOPER / INDEPENDENT PROJECTS <span class="at">@ Bangkok University</span></h3>
+                  <p class="duration">(May 2022 – Present)</p>
+                </header>
+                <ul class="cli-list">
+                  <li><span class="prompt">›</span> Usual — Inventory/Sales/Tax desktop app with Python & SQLite.</li>
+                  <li><span class="prompt">›</span> Drive Now — Mini eCommerce, Responsive UI, JSON checkout.</li>
+                </ul>
+              </article>
+
+              <!-- 2) Internship / Open-Source Readiness -->
+              <article class="about-card-like work-card card neon-pulse shimmer scanline-overlay reveal">
+                <header class="work-title">
+                  <h3>INTERNSHIP <span class="at">(Upcoming)</span></h3>
+                  <p class="duration">(Planned for 2025)</p>
+                </header>
+                <ul class="cli-list">
+                  <li><span class="prompt">›</span> เตรียมความพร้อมสำหรับ การทำงานร่วมกันในโลกจริง ผ่าน GitHub และ REST APIs
+                  <li><span class="prompt">›</span> เรียนรู้การ Develop และ Deploy แอปพลิเคชันแบบ Full-Stack ขนาดเล็ก พร้อมจัดการการเชื่อมต่อฝั่ง Backend อย่างมีประสิทธิภาพ
+                  <li><span class="prompt">›</span> สำรวจแนวทางการ มีส่วนร่วมในโครงการ Open-Source เพื่อยกระดับการทำงานเป็นทีมและคุณภาพของ Source Code
+                </ul>
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
+
+
+
+      <!-- CONTACT -->
+      <div class="swiper-slide" data-hash="contact">
+        <div class="slide-content scrollable">
+          <section class="section contact-section">
+            <header class="section-head">
+              <h2 class="heading neon-flicker">CONTACT</h2>
+              <p class="section-sub">ping_me();</p>
+            </header>
+
+            <div class="contact-card card neon-pulse shimmer scanline-overlay reveal">
+              <div class="contact-info">
+                <p><span class="label">อีเมล :</span> <a href="mailto:mantunwa@gmail.com">mantunwa@gmail.com</a></p>
+                <p><span class="label">เบอร์โทร :</span> <a href="tel:0970243148">097-024-3148</a></p>
+                <p class="social">
+                  <a href="https://github.com/l3elieveiT" target="_blank" class="a-glitch" data-text="GitHub">GitHub</a> |
+                  <a href="https://www.linkedin.com/in/prompong-bunjerdwattanakul/" target="_blank" class="a-glitch" data-text="LinkedIn">LinkedIn</a>
+                </p>
+              </div>
+
+              <div class="contact-footer">
+                <p>© 2025 Prompong Bunjerdwattanakul.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Lightbox -->
   <div class="lightbox" id="lightbox" aria-hidden="true">
     <button class="lightbox-close" id="lightboxClose" aria-label="Close">×</button>
     <img id="lightboxImg" alt="preview">
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
